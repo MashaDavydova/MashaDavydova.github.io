@@ -787,3 +787,186 @@ header> h3 {
     }
 
 }
+/*-------- game --------*/
+
+.game-fon{
+            width: 100%;
+            height: 60%;
+
+            background-image: url(../img/fonGame.jpg);
+            background-position: left;
+            background-size: 110%;
+            background-repeat: repeat;
+
+            position: fixed;
+            animation: fon 10s linear 0s infinite;
+            animation-direction: alternate;
+        }
+            
+        .game-rool {
+             width: 100%;
+             height: 20%;
+
+             background-color: #000;
+             position: fixed;
+             top: 60%; 
+        }
+
+        .game-rool > span {
+             width: 120px;
+             height: 16px;
+             background-color: #fff;
+             top: 42%;
+             right: -120px;
+             position: absolute;
+
+            /* animation: ri 8s linear 0s infinite;*/
+             /*animation-direction: alternate;*/
+        }
+        .ri-1 {
+         animation: ri 8s linear 0s infinite;   
+        }
+        .ri-2 {
+         animation: ri 8s linear 2s infinite;   
+        }
+        .ri-3 {
+         animation: ri 8s linear 4s infinite;   
+        }
+        .ri-4 {
+         animation: ri 8s linear 6s infinite;   
+        }
+
+
+        .game-grass {
+            width: 100%;
+            height: 20%;
+
+            background-color:#1e9f00;
+            position: fixed;
+
+            top: 80%;
+        }
+        .orig {
+            width: 140px;
+            position: absolute;
+            bottom: 5%;
+            right: -140px;
+             z-index: 10;
+        }
+        .orig-1 {
+            bottom: 60%;
+         animation: ri 8s linear 1s infinite;   
+        }
+        .orig-2 {
+            bottom: 3%;
+         animation: ri 8s linear 2s infinite;   
+        }
+        .orig-3 {
+            bottom: 50%;
+         animation: ri 8s linear 3s infinite;   
+        }
+        .orig-4 {
+         animation: ri 8s linear 5s infinite;   
+        }
+
+        @keyframes fon {
+            0% {
+                background-position: left;
+            }
+
+            100% {
+                background-position: right;
+            }
+        }
+
+        @keyframes ri {
+            0% {
+               right: -140px;
+            }
+
+            100% {
+               right: 100%;
+            }
+        }
+        .bird-1 {
+            width: 100px;
+            position: absolute;
+            top: 200px;
+            left: -110px;
+            animation: bird 7s linear 4s infinite;
+        }
+         @keyframes bird {
+            0% {
+               left: -120px;
+            }
+
+            100% {
+              left: 140%;
+            }
+        }
+        .bird-2 {
+            width: 30px;
+            position: absolute;
+            top: 120px;
+            left: -120px;
+            animation: bird 20s linear 6s infinite;
+        }
+        .bird-3 {
+            width: 55px;
+            position: absolute;
+            top: 120px;
+            left: -120px;
+            animation: bird 13s linear 2s infinite;
+        }
+        .man {
+            width: 340px;
+            position: absolute;
+            bottom: 5%;
+            transition: all 0.5s;
+            z-index: 11;
+        }
+        .man:hover {
+            bottom:60%; 
+        }
+        .grass{
+            width: 110%;
+            height: 220px;
+            position: absolute;
+            bottom:0;
+            left: 0;
+            animation: grass 3s linear 0s infinite;
+            animation-direction: alternate;
+
+        }
+        @keyframes grass  {
+            0% {
+               left: 0;
+            }
+
+            100% {
+              left: -10%;
+            }
+        }
+        .bab-1 {
+            width: 300px;
+            position: absolute;
+            bottom: 10%;
+            left: 70%;
+        }
+        .bab-2 {
+            width: 300px;
+            position: absolute;
+            bottom: 10%;
+            left: 40%;
+        }
+        .bab-3 {
+            width: 300px;
+            position: absolute;
+            bottom: 10%;
+            left: 10%;
+        }
+
+
+    
+
+
